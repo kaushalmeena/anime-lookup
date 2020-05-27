@@ -1,0 +1,143 @@
+body,
+html {
+  margin: 0;
+  width: 600px;
+  height: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  background-color: #2e51a2;
+}
+
+.search {
+  display: flex;
+  padding: 10px;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: transparent;
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #fff;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: transparent;
+  box-sizing: border-box;
+  padding: 6px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.search-input:focus,
+.search-button:focus {
+  outline: none;
+}
+
+.search-image {
+  height: 16px;
+  width: 16px;
+}
+
+.loader-image {
+  height: 60px;
+  width: 60px;
+}
+
+.content {
+  flex: 1;
+  position: relative;
+  padding: 5px 15px 5px 15px;
+  box-sizing: border-box;
+  overflow: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #797d7f;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: -3px 3px 6px 0px rgba(50, 50, 50, 0.35);
+}
+
+.card-image {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.card-content {
+  padding: 5px;
+  flex: 1;
+}
+
+.card-title {
+  color: #343434;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-date {
+  color: #343434;
+  font-size: 14px;
+}
+
+.card-info {
+  color: #515a5a;
+  font-size: 12px;
+}
+
+.card-synopsis {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #515a5a;
+  font-size: 16px;
+}

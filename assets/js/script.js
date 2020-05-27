@@ -12,6 +12,7 @@ function checkEnterKey(e) {
 
 function fetchAnimeList() {
   var xmlhttp = null;
+  var apiUrl = "https://api.jikan.moe/v3/search/anime?limit=20&q=";
 
   var searchInput = document.getElementById("searchInput");
   var searchButton = document.getElementById("searchButton");
@@ -50,7 +51,7 @@ function fetchAnimeList() {
       </div>`;
   };
 
-  xmlhttp.open("GET", "https://api.jikan.moe/v3/search/anime?limit=16&q=" + searchInput.value, true);
+  xmlhttp.open("GET", apiUrl + searchInput.value, true);
   xmlhttp.responseType = 'json';
   xmlhttp.send();
 }
@@ -59,17 +60,33 @@ function generateContent(results = []) {
   var html = "";
   var i;
 
+  var url;
+  var imageUrl;
+  var title;
+  var date;
+  var episodes;
+  var info;
+  var synopsis;
+
   if (results.length > 0) {
     for (i = 0; i < results.length; i++) {
+      url = decodeURIComponent(results[i].url);
+      imageUrl = decodeURIComponent(results[i].image_url);
+      title = results[i].title;
+      date = getDate(results[i].start_date);
+      episodes = results[i].episodes;
+      info = `${results[i].type} - ${episodes} ${episodes > 1 ? "Episodes" : "Episode"}`;
+      synopsis = results[i].synopsis;
+
       html +=
-        `<a target="_blank" rel="noopener noreferrer" href="${decodeURIComponent(results[i].url)}">
+        `<a target="_blank" rel="noopener noreferrer" href="${url}">
             <div class="card">
-              <img alt="Search" class="card-image" src="${decodeURIComponent(results[i].image_url)}" />
+              <img alt="Search" class="card-image" src="${imageUrl}" />
               <div class="card-content">
-                <div class="card-title">${results[i].title}</div>
-                <div class="card-date">${getDate(results[i].start_date)}</div>
-                <div class="card-info">${results[i].type} - ${results[i].episodes} Eps.</div>
-                <div class="card-synopsis">${results[i].synopsis}</div>
+                <div class="card-title">${title}</div>
+                <div class="card-date">${date}</div>
+                <div class="card-info">${info}</div>
+                <div class="card-synopsis">${synopsis}</div>
               </div>
             </div>
           </a>`;

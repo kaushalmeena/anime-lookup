@@ -16,7 +16,7 @@ To install extension in your local machine, you need to follow these steps:
 1. Clone this repo onto your computer:
 
 ```bash
-$ git clone https://github.com/kaushalmeena1996/anime-lookup.git
+$ git clone https://github.com/kaushalmeena/anime-lookup.git
 ```
 
 2. In Chrome, open the Extension Management page by navigating to `chrome://extensions`.

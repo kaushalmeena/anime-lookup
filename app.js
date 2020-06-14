@@ -28,7 +28,7 @@ function fetchAnimeList() {
   searchButton.disabled = true;
   searchContent.innerHTML =
     `<div class="center">
-      <img alt="Loader" class="loader-image" src="./assets/img/loader.gif" />
+      <img alt="Loader" class="loader-image" src="./assets/images/loader.gif" />
     </div>`;
 
   xmlhttp.onload = function () {

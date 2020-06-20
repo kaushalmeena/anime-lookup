@@ -26,3 +26,7 @@ $ git clone https://github.com/kaushalmeena/anime-lookup.git
 3. Enable Developer Mode by clicking the toggle switch next to **Developer mode**.
 
 4. Click the **LOAD UNPACKED** button and select the `anime-lookup` directory.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

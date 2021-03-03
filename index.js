@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById("searchInput").addEventListener('keypress', checkEnterKey, false);
-  document.getElementById("searchButton").addEventListener('click', fetchAnimeList, false);
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("searchInput").addEventListener("keypress", checkEnterKey, false);
+  document.getElementById("searchButton").addEventListener("click", fetchAnimeList, false);
 }, false);
 
 function checkEnterKey(e) {
@@ -52,7 +52,7 @@ function fetchAnimeList() {
   };
 
   xmlhttp.open("GET", apiUrl + searchInput.value, true);
-  xmlhttp.responseType = 'json';
+  xmlhttp.responseType = "json";
   xmlhttp.send();
 }
 

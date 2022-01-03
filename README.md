@@ -1,15 +1,19 @@
-# Anime-Lookup
+# Anime Lookup
 
 A chrome extension that searches for a animes using Jikan API.
 
-## Requirements
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development purposes.
+
+### Requirements
 
 To install and run this extension you need:
 
 - [Chrome](https://www.google.com/chrome/ "Chrome")
 - [git](https://git-scm.com/downloads "git") (only to clone this repository)
 
-## Installation
+### Installation
 
 To install extension in your local machine, you need to follow these steps:
 

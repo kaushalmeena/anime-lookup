@@ -2,7 +2,7 @@
   "name": "Anime-Lookup",
   "version": "1.0",
   "description": "Fetches anime list for user using Jikan API.",
-  "browser_action": {
+  "action": {
     "default_icon": "./assets/images/icons/icon-32.png",
     "default_popup": "index.html"
   },
@@ -12,5 +12,5 @@
     "48": "./assets/images/icons/icon-48.png",
     "128": "./assets/images/icons/icon-128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }

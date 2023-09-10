@@ -1,19 +1,22 @@
 {
   "name": "anime-lookup",
   "version": "1.0.0",
-  "description": "A chrome extension that searches for a animes using Jikan API.",
-  "repository": "git@github.com:kaushalmeena/anime-lookup.git",
+  "description": "A chrome extension that searches for a anime using Jikan API.",
   "author": "Kaushal Meena <kaushal.meena1996@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "live-server src --port=5000"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaushalmeena/anime-lookup.git"
+  },
   "devDependencies": {
-    "eslint": "^8.18.0",
+    "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "live-server": "^1.2.2"
   }
 }

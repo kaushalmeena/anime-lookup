@@ -1,6 +1,6 @@
 # Anime-Lookup
 
-A chrome extension that searches for a animes using Jikan API.
+A chrome extension that searches for a anime using Jikan API.
 
 ## Getting Started
 
